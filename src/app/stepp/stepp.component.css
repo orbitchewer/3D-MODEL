@@ -1,0 +1,1439 @@
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .label {
+    color: #000;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+  }
+  element.style {
+    background-color: cornflowerblue;
+  }
+  
+  .bgColor {
+    width: 100%;
+    height: 5.5rem;
+    background-color: #F5F5F5;
+    position: relative;
+  }
+  
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .canvasPostion {
+    position: absolute;
+    top: 87px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  canvas {
+    position: absolute;
+    left: 0px;
+    /* width: 1800px;
+    height: 800px; */
+    /* cursor: crosshair; */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #plotter {
+    cursor: crosshair;
+  }
+  
+  .upper-canvas {
+    cursor: crosshair;
+  }
+  
+  /* canvas:hover {
+    transform: scale(1.2);
+  } */
+  
+  .highlight {
+    color: white;
+  }
+  
+  .alignleft {
+    position: absolute;
+    left: 146px;
+    margin-bottom: 10px;
+  }
+  
+  .col-3 {
+    position: absolute;
+    right: 10px;
+  }
+  
+  #zoom {
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* [type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  [type=radio] + img {
+    cursor: pointer;
+  } */
+  
+  [type=radio]:checked+label {
+   background-color: green;
+  }
+  
+  .label_itemTL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 12.4%;
+    left: 9.8%;
+  }
+  
+  .label_itemBL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    left: 9.8%;
+    bottom: 15%;
+  }
+  
+  .label_itemTR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 12.4%;
+    left: 31.2%;
+  }
+  
+  .label_itemBR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 15%;
+    left: 31.2%;
+  }
+  .label_itemFTL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 12.4%;
+    left: 39.6%;
+  }
+  .label_itemFTR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 12.4%;
+    left: 59.6%;
+  }
+  .label_itemFBR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 15%;
+    left: 59.6%;
+  }
+  .label_itemFBL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    left: 39.6%;
+    bottom: 15%;
+  }
+  
+  .label_itemRTL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 12.4%;
+    left: 69.4%;
+  }
+  .label_itemRTR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 12.4%;
+    left: 90.4%;
+  }
+  .label_itemRBR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 15%;
+    left: 90.4%;
+  }
+  .label_itemRBL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    left: 69.4%;
+    bottom: 15%;
+  }
+  .label_itemLTL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 15.4%;
+    left: 9.8%;
+  }
+  .label_itemLTR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 15.4%;
+    left: 31.2%;
+  }
+  .label_itemLBR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0%;
+    left: 31.2%;
+  }
+  .label_itemLBL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    left: 9.8%;
+    bottom: 0%;
+  }
+  
+  .label_itemBTL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 15.4%;
+    left: 39.6%;
+  }
+  .label_itemBTR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 15.4%;
+    left: 59.6%;
+  }
+  .label_itemBBR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0%;
+    left: 59.6%;
+  }
+  .label_itemBBL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    left: 39.6%;
+    bottom: 0%;
+  }
+  
+  .label_itemBATL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 15.4%;
+    left: 69.4%;
+  }
+  .label_itemBATR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: 15.4%;
+    left: 90.4%;
+  }
+  .label_itemBABR {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0%;
+    left: 90.4%;
+  }
+  .label_itemBABL {
+   cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    left: 69.4%;
+    bottom: 0%;
+  }
+
+  .label_itemTL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 2.15rem;
+     left: 16.4rem;
+   }
+  
+   .label_itemBL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     left: 16.4rem;
+     bottom: 28.1rem;
+   }
+  
+   .label_itemTR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 2.15rem;
+     left: 27.1rem;
+   }
+  
+   .label_itemBR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     bottom: 28.1rem;
+     left: 27.1rem;
+   }
+   .label_itemFTL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 11rem;
+     left: 16.4rem;
+   }
+   .label_itemFTR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 11rem;
+     left: 27.1rem;
+   }
+   .label_itemFBR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     bottom: 19.3rem;
+     left: 27.1rem;
+   }
+   .label_itemFBL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     left: 16.4rem;
+     bottom: 19.3rem;
+   }
+  
+   .label_itemRTL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 11rem;
+     left: 31.1rem;
+   }
+   .label_itemRTR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 11rem;
+     left: 41.8rem;
+   }
+   .label_itemRBR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     bottom: 19.3rem;
+     left: 41.8rem;
+   }
+   .label_itemRBL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     left: 31.1rem;
+     bottom: 19.3rem;
+   }
+   .label_itemLTL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 10.9rem;
+     left: 1.7rem;
+   }
+   .label_itemLTR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 10.9rem;
+     left: 12.5rem;
+   }
+   .label_itemLBR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     bottom: 19.3rem;
+     left: 12.5rem;
+   }
+   .label_itemLBL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     left: 1.7rem;
+     bottom: 19.3rem;
+   }
+  
+   .label_itemBTL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top:19.7rem;
+     left: 16.4rem;
+   }
+   .label_itemBTR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top:19.7rem;
+     left: 27.1rem;
+   }
+   .label_itemBBR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     bottom: 10.4rem;
+     left: 27.1rem;
+   }
+   .label_itemBBL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     left: 16.4rem;
+     bottom: 10.4rem;
+   }
+  
+   .label_itemBATL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 11rem;
+     left: 45.8rem;
+   }
+   .label_itemBATR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     top: 11rem;
+     left: 56.4rem;
+   }
+   .label_itemBABR1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     bottom: 19.2rem;
+     left: 56.4rem;
+   }
+   .label_itemBABL1 {
+    cursor: pointer;
+     opacity: 0.5;
+     position: absolute;
+     left: 45.8rem;
+     bottom: 19.2rem;
+   }
+  
+  .btn-close {
+    position: fixed;
+    right: 1rem;
+   
+  }
+  
+  .saveCavityData {
+    position: fixed;
+    right: 2.5rem;
+    fill: currentColor;
+    
+  }
+  
+  .saveCavityData :hover {
+ 
+    /* position: fixed;
+    right: 2.5rem;
+    fill: currentColor; */
+    opacity: 0.75;
+  
+
+  }
+  
+  .btn-close1 {
+    position: fixed;
+    right: 0.5rem;
+    margin-top: 0.5rem;
+  
+  }
+  
+  .btn-closeLeftCanvas {
+    position: absolute;
+    left: 18.62rem;
+    top: 0px;
+    margin-top: 0rem;
+    color: gray;
+    margin-bottom: 0rem;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    ;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    ;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    ;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 4px;
+    height: 4px;
+    padding: 16px;
+    background-color: #F5F5F5;
+    opacity: 1;
+  }
+  
+  .btn-closeLeftCanvas:hover {
+    position: absolute;
+    left: 18.62rem;
+    top: 0px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    ;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    ;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    ;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 4px;
+    height: 4px;
+    padding: 16px;
+    background-color: #F5F5F5;
+    opacity: 0.75;
+    color: black;
+  }
+  
+  .btnDisplay {
+    width: 4.4rem;
+    text-align: center;
+    background-color: transparent;
+  }
+  
+  .btnDisplay1 {
+    width: 8rem;
+    text-align: center;
+  }
+  
+  .btnDisplayLeftOffCanvas {
+    width: 13.5rem;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    padding-left: 5px;
+  }
+  
+  .btnDisplayLeftOffAddBtn {
+    width: 1rem;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    padding-left: 5px;
+  }
+  
+  .btnDisplayLeftProjectInfo {
+    width: 13.5rem;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    padding-left: 5px;
+  }
+  
+  .rationDisplay {
+  
+    text-align: center;
+    width: -webkit-fill-available;
+    border: 2px solid black;
+  }
+  
+  .rationDisplay1 {
+  
+    text-align: center;
+
+    border: 1px solid black;
+    vertical-align: middle;
+  }
+  
+  .fillheading {
+    background-color: grey;
+    color: white;
+  }
+  
+  /* table {
+    border-radius: 12px;
+  border: 2px solid #777575;
+  background-color: whitesmoke;
+  } */
+  table tbody td {
+    padding: 2px 0px;
+   
+    vertical-align: middle;
+    
+  }
+  
+  table thead th {
+    background-color: rgba(214, 214, 219, 0.904);
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px 0px;
+    width: 3rem;
+ 
+  }
+  
+  table tbody tr {
+    vertical-align: middle;
+   
+  }
+  
+  .blockmeasuremenu {
+    background-color: rgba(214, 214, 219, 0.904);
+    text-align: center;
+    vertical-align: middle;
+    width: 155px;
+    border: 2px solid black;
+  }
+  
+  table {
+    width: 22rem;
+  }
+  
+  .table1 {
+    width: 345px;
+  }
+  
+  .table1 tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table1 tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  .mChartTable {
+    width: -webkit-fill-available;
+  }
+  
+  .mChartTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .mChartTable tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  #knownValues {
+    margin: -3px;
+  
+  }
+  
+  #knownValuesData {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 4.5rem;
+    border-radius: 4px;
+    padding: 2px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+  }
+  
+  .col-3 {
+    max-width: 43px;
+    position: absolute;
+    top: 50%;
+    margin-right: 1px;
+  }
+  
+  .removeIcon {
+    width: 1rem;
+    height: 1.1rem;
+    fill: currentColor;
+  
+  }
+  
+  .removeIcon :hover {
+    opacity: 50%;
+  }
+  
+  .offcanvas-body {
+    width: 474x;
+    padding: 0px;
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
+  
+  .offcanvas-end {
+    top: 90px;
+    width: 601px;
+  }
+  
+  .extended-width {
+    width: 1030px;
+  }
+  
+  .offcanvas-title {
+    margin-left: 1rem;
+  }
+  
+  .offcanvas-header {
+    justify-content: left;
+    border: none;
+  }
+  
+  .my-custom-scrollbar {
+    position: relative;
+    height: 524px;
+    width: 597px;
+    overflow: auto;
+    overflow-y: scroll;
+  
+  }
+  .my-custom-scrollbar1 {
+    position: absolute;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    overflow: auto;
+    overflow-y: scroll;
+  
+  }
+  .my-custom-scrollbar.extended {
+    position: relative;
+    height: 778px;
+    width: 1026px;
+    overflow: auto;
+    overflow-y: scroll;
+  
+  }
+  
+  .my-custom-scrollbarLeft {
+    position: relative;
+    height: 248px;
+    width: 265px;
+    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  
+  }
+  
+  .my-custom-scrollbarLeft1 {
+    position: relative;
+    height: 281px;
+    width: 265px;
+    overflow: auto;
+    border: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  
+  }
+  
+  .table-wrapper-scroll-y {
+    display: block;
+  }
+  
+  table tbody tr td {
+    width: 200px;
+  }
+  
+  .unitInlineDisplay {
+    display: inline-flex;
+  }
+  
+  .saveBtnAlign {
+    display: block;
+    margin-right: -40px;
+    margin-top: 5px;
+  }
+  
+  .decimalPrecisionLabel {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  .decimalPrecisionSelect {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  #deactivate-adding-coords:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .form-select {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-right: 50px;
+    width: 260px;
+  }
+  
+  .validation {
+    color: red;
+  }
+  
+  .topPadding {
+    margin-top: 5.2rem;
+    height: 352px;
+  }
+  
+  .topOffCanvasButtonPosition {
+    position: fixed;
+    left: 50%;
+    margin-top: -0.5rem;
+    top: 4.9rem;
+    color: grey;
+  
+  }
+  
+  .offCanvasImage {
+    width: 96%;
+    height: 350px;
+    position: inherit;
+  }
+  
+  .rightalign {
+    position: absolute;
+    right: 1rem;
+    color: currentColor;
+  }
+  
+  .rightalign1 {
+    position: absolute;
+    right: 7rem;
+    color: currentColor;
+  }
+  
+  #version {
+    font-size: x-small;
+  }
+  
+  label.btn {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    color: grey;
+    line-height: 1.5;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+  
+  label.btn:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border: 3px solid rgba(13, 110, 253, 0.25);
+  
+  }
+  
+  label.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .fileName {
+    position: absolute;
+    display: inline-block;
+    margin-top: -0.5rem;
+    left: 75%;
+    top: 62px;
+    width: 25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .baseFileName {
+    position: absolute;
+    display: inline-block;
+    margin-top: -0.5rem;
+    right: 4%;
+    top: 61px;
+    width: 25rem;
+    color: red;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .cavityName {
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  .libraryName {
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  .inline_topBar {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .decimalBoxSizing {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    width: 4rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .icon_size {
+    width: 6.1rem;
+    height: 4.5rem;
+    align-items: center;
+    margin-left: 0.25rem;
+  
+  }
+  .icon_sizeCubeControl {
+    width: 2.5rem;
+    height: 2rem;
+    align-items: center;
+    margin-left: 0.25rem;
+  
+  }
+  .BoxMatch {
+    background-color: grey;
+    color: white;
+    border: none;
+    width: 4rem;
+    height: 1.15rem;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .disabledBox {
+    background-color: rgb(194, 190, 190);
+    color: dimgrey;
+    border: none;
+    width: 4rem;
+    height: 1.15rem;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .BoxMatchTopOffCanvas {
+    border: none;
+    width: 4rem;
+    height: 1.25rem;
+    text-align: center;
+  }
+  
+  .displayLWH {
+    border: none;
+    width: 4rem;
+    height: 1.25rem;
+    text-align: center;
+  }
+  
+  ::placeholder {
+    color: white;
+    align-items: center;
+    border: none;
+  }
+  
+  .placeholder-white::placeholder {
+    color: white;
+  }
+  
+  .placeholder-white.input-focus {
+    background-color: white;
+    color: black;
+  }
+  
+  .placeholder-white.input-blur {
+    background-color: grey;
+    color: white;
+  }
+  
+  .placeholder-length::placeholder {
+    color: white;
+  }
+  
+  .placeholder-length.input-focus {
+    background-color: white;
+    color: black;
+  }
+  
+  .placeholder-length.input-blur {
+    background-color: grey;
+    color: white;
+  }
+  
+  .placeholder-width::placeholder {
+    color: white;
+  }
+  
+  .placeholder-width.input-focus {
+    background-color: white;
+    color: black;
+  }
+  
+  .placeholder-width.input-blur {
+    background-color: grey;
+    color: white;
+  }
+  
+  .placeholder-height::placeholder {
+    color: white;
+  }
+  
+  .placeholder-height.input-focus {
+    background-color: white;
+    color: black;
+  }
+  
+  .placeholder-height.input-blur {
+    background-color: grey;
+    color: white;
+  }
+  
+  .offcanvas-header {
+    background-color: #F5F5F5;
+    padding: 0.5rem 0rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
+  
+  .cavity {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+  }
+  
+  .cavityEdit {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+  }
+  
+  .exportSvg {
+    width: 42px;
+    height: 42px;
+    fill: currentColor;
+    left: 1rem;
+  }
+  
+  .importLogo {
+    width: 32px;
+    height: 32px;
+    color: grey;
+  }
+  
+  .projectionBoxDiv {
+    position: absolute;
+    left: 44rem;
+  
+    ::placeholder {
+      color: gray;
+      align-items: center;
+      border: none;
+    }
+  }
+  
+  .projectionBoxInputDiv {
+    width: 5rem;
+    padding: 0rem 0.25rem;
+    text-align: center;
+    margin-left: 1rem;
+    border-radius: 4px;
+  }
+  
+  .projectionBoxLabel {
+    background-color: #F5F5F5;
+    color: black;
+    padding: 0.25rem;
+    width: 5rem;
+    text-align: center;
+  
+  }
+  
+  .unitBoxLabel {
+    position: absolute;
+    left: -44rem;
+    top: -19rem;
+    background-color: #F5F5F5;
+    color: black;
+    /* border: 1px solid black;
+    border-radius: 4px; */
+    padding: 0.25rem;
+    width: 9rem;
+    text-align: left;
+  
+  }
+  
+  .projectionBoxInput {
+    position: absolute;
+    width: 1.4rem;
+    padding: 0rem;
+    text-align: center;
+    font-size: small;
+  
+  }
+  
+  .imgToggleBtn {
+    position: absolute;
+    right: 3rem;
+    top: 0.5rem;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  .faceImage {
+    position: absolute;
+    color: white;
+    font-style: initial;
+    font-weight: 700;
+    font-size: larger;
+  }
+  
+  .faceImagesTopNLeft {
+    left: 17%;
+    top: 35.8%;
+  }
+  
+  .faceImagesFrontNBottom {
+    left: 41.4%;
+    top: 35.8%;
+  }
+  
+  .faceImagesRightNBack {
+    left: 73.3%;
+    top: 35.8%;
+  }
+  .faceImagesTopNLeft1 {
+    left: 20rem;
+    bottom: 29rem;
+    font-size: 2rem;
+  }
+  
+  .faceImagesFrontNBottom1 {
+    left: 18.6rem;
+      bottom: 20rem;
+      font-size: 2rem;
+  }
+  
+  .faceImagesRightNBack1 {
+    left: 33.7rem;
+    bottom: 20rem;
+    font-size: 2rem;
+  }
+  .faceImageLeft1 {
+    left: 4.9rem;
+      bottom: 20rem;
+      font-size: 2rem;
+  }
+  
+  .faceImageBottom1 {
+    left: 17.9rem;
+    bottom: 11.3rem;
+    font-size: 2rem;
+  }
+  
+  .faceImageBack1 {
+    left: 48.7rem;
+      bottom: 20rem;
+      font-size: 2rem;
+  }
+  .faceImageLeft {
+    left: 16.5%;
+    top: 41.8%;
+  }
+  
+  .faceImageBottom {
+    left: 43.2%;
+    top: 41.8%;
+  }
+  
+  .faceImageBack {
+    left: 73.9%;
+    top: 41.8%;
+  }
+  
+  #leftoffcanvasScrolling {
+    top: 89px;
+    width: 57.5rem;
+  }
+  /* input[type=radio] {
+    appearance: none;
+    padding: 10px;
+    background-color: yellow;
+    border-radius:50%;
+  }
+  input[type=radio]:checked {
+    background-color: black;
+  } */
+  .accordion-button {
+    padding: 0.5rem 1.25rem;
+  }
+  
+  .accordion-button:focus {
+    z-index: 3;
+    border-color: grey;
+    outline: 0;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: #F5F5F5;
+  }
+  
+  .accordion-body {
+    padding: 0rem 0rem;
+  }
+  
+  td.disabled {
+    pointer-events: none;
+  }
+  
+  .contextMenuDesign {
+    position: absolute;
+    height: 5.4rem;
+     background-color: lightgrey;
+    opacity: 0.8;
+    border: 1px solid;
+    font-size: 0.9rem;
+    border-radius: 4px;
+  }
+  .ContextBoxHeight{
+    height: 1.25rem;
+  }
+  .contextBoxLabel{
+    position: relative;
+      left: 3%;
+      text-align: center;
+         color: white;
+      padding: 0.5px;
+  }
+  .contextBoxInput{
+    position: relative;
+      left: 3%;
+      text-align: center;
+      background-color: white;
+      color: white;
+      border: 1px solid black;
+  }
+  .highlighted {
+    width: 5.7rem;
+    height: 4.5rem;
+    align-items: center;
+    margin-left: 0.25rem;
+    border-radius: 0.8rem;
+    color: #212529;
+    background-color: #e2e6ea;
+    border: 3px solid rgba(13, 110, 253, 0.25);
+  }
+  .faceBtnStyle{
+    border:3px solid green;
+    border-radius: none;
+    background-color: grey;
+  }
+  /* :host {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  } */
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .btnCube {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 0.25rem;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .btnCube:hover {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px #4caf50;
+  }
+  
+  .container {
+    position: fixed;
+    margin-top: 50px;
+    perspective: 1000px;
+    width: 300px; 
+    height: 300px;
+    zoom: 50%;
+    top: 17.2rem;
+    left: 14rem;
+  }
+  
+  .cube {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .face {
+    position: absolute;
+    border: 1px solid rgba(142, 142, 142, 0.683);
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    height: 300px; 
+    line-height: 300px; 
+    text-align: center;
+    font-size: 2.25rem;
+    background-color: #fff;
+  }
+  
+  .Front {
+    transform: translateZ(150px);
+  }
+  
+  .Back {
+    transform: rotateY(180deg) translateZ(150px);
+  }
+  
+  .Top {
+    transform: rotateX(90deg) translateZ(150px);
+  }
+  
+  .Right {
+    transform: rotateY(90deg) translateZ(150px);
+  }
+  
+  .Left {
+    transform: rotateY(-90deg) translateZ(150px);
+  }
+  
+  .Bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+  }
+  
+  .newBaseBtn{
+    position: relative;
+      font-size: large;
+      display: grid;
+      justify-content: space-between;
+      margin-top: 24%;
+      margin-left: 8%;
+  }
+  .mChartSelectBtn :hover{
+  background-color: green;
+  }
+  .btn-primary1 {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff; 
+  }
+  @media screen and (max-width: 1746px) {
+    .hideOnZoom {
+      display: none;
+    }
+  
+    .bgColor {
+      width: 100%;
+  
+    }
+  }
+  
+  @media screen and (max-width: 1536px) {
+    .hideOnZoom {
+      display: none;
+    }
+  
+    .bgColor {
+      width: 100%;
+  
+    }
+  }
+  
+  @media screen and (max-width: 1281px) {
+    .hideOnZoom {
+      display: none;
+    }
+  
+    .bgColor {
+      width: 100%;
+  
+    }
+  }
+  
+  @media screen and (max-width: 960px) {
+    .hideOnZoom {
+      display: none;
+    }
+  
+    .bgColor {
+      width: 200%;
+  
+    }
+  }
+  
+  @media screen and (max-width: 769px) {
+    .hideOnZoom {
+      display: none;
+    }
+  
+    .bgColor {
+      width: 250%;
+  
+    }
+  }
+  
+  @media screen and (max-width: 641px) {
+    .hideOnZoom {
+      display: none;
+    }
+  
+    .bgColor {
+      width: 300%;
+  
+    }
+  }
+  
+  @media screen and (max-width: 481px) {
+    .hideOnZoom {
+      display: none;
+    }
+  
+    .bgColor {
+      width: 400%;
+  
+    }
+  }
+  
+  @media screen and (max-width: 384px) {
+    .hideOnZoom {
+      display: none;
+    }
+  
+    .bgColor {
+      width: 500%;
+  
+    }
+  }
+  

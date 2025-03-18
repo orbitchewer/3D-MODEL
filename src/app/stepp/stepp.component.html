@@ -1,0 +1,111 @@
+<!-- <label for="heightInput">Enter new height:</label>
+<input type="number"  id="heightInput" placeholder="Enter height">
+ <button (click)="updateHeight()">Update Height</button> -->
+<!-- <div style="float: right;" id="currentHeight">Current height: {{ currentHeight }}<br></div>
+
+<label for="radius">            Enter new radius:</label>
+<input type="number" id="radiusinput" placeholder="Enter radius" /> -->
+<!-- <button (click)="updateradius()">Update radius</button> -->
+ <!-- <br>
+<div style="float: right;" id="currentradius">Current Radius: {{ currentradius }}</div>
+<br>
+
+<div>
+  <label for="planeSelection">Select Plane:</label>
+  <select id="planeSelection" >  
+    <option value="">Select Plane</option>
+    <option value="xy">XY Plane</option>
+    <option value="xz">XZ Plane</option>
+    <option value="yz">YZ Plane</option>
+  </select>
+
+</div>
+<br>
+<button (click)="update_step()">Update STEP File</button> -->
+<div class="appColor">
+  <nav class="navbar sticky-top navbar-light bgColor">
+    <div class="d-flex w-100 align-items-center">
+      <div class="d-flex align-items-center">
+        <div class="P-1 bd-highlight">
+          <p><img class="logo" src="/assets/drawing.svg"></p>
+        </div>
+        <div>
+          <h4 style="display: flex; justify-content: center; align-items: center; height: 100%;">
+            <pre></pre> STEP TO 3D MODEL
+          </h4>
+        </div>
+      </div>
+      
+      <!-- This div will push the buttons to the right -->
+      <div class="ms-auto d-flex align-items-center">
+        <!-- Upload MBXML file -->
+        <div class="P-1 bd-highlight"   > <label for="exportCsv"
+          class="btn btn-light btn-sm icon_size" (change)="onFileSelected($event)" data-toggle="tooltip" data-placement="top" title="JSON of STEP File."
+          [style.display]="'grid'" [style.border-radius]="'0.8rem'" (click)="fileUploadSimple.click()">
+          <input #fileUploadSimple type="file" class="file-input"
+            hidden="true" /> 
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="32" fill="currentColor" class="bi bi-file-earmark-arrow-up" viewBox="0 0 16 16">
+              <path d="M8.5 11.5a.5.5 0 0 1-1 0V7.707L6.354 8.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 7.707z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+            </svg>
+          </span>
+          <span>UPLOAD</span>
+
+
+        </label>
+      </div>
+
+        <!-- SHADE button -->
+        <div class="P-1 bd-highlight" (click)="clickShade()">
+          <label for="exportCsv" class="btn btn-light btn-sm icon_size" [style.display]="'grid'" [style.border-radius]="'0.8rem'">
+            <span>
+              <img src="/assets/solid.svg" width="48" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="#fff" fill-rule="evenodd">
+            </span>
+            <span>SHADE</span>
+          </label>
+        </div>
+
+        <!-- WIREFRAME button -->
+        <div class="P-1 bd-highlight" (click)="clickWireframe()">
+          <label for="exportCsv" class="btn btn-light btn-sm icon_size" [style.display]="'grid'" [style.border-radius]="'0.8rem'">
+            <span>
+              <img src="/assets/wireframe.svg" width="48" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="#fff" fill-rule="evenodd">
+            </span>
+            <span>WIREFRAME</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="canvasPostion">
+        <canvas #stepp></canvas>
+        <!-- <canvas class="cursor-trail" #mycanvas id="plotter" (dblclick)="addingControl($event)" willReadFrequently> -->
+        <!-- </canvas> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <button (click)="clickShade()"id="shadeButton" style="margin-left: 95%;">SHADE</button> -->
+
+<!-- <div class="container">
+
+        <label for="formFile" class="form-label">Upload file example</label>
+        <input type="file" (change)="onFileSelected($event)" />
+
+ </div> -->
+<br>
+<br>
+
+<script>
+
+
+</script>
+
+<!--(change)="onPlaneSelectionChange($event)"-->
+
+<!-- <canvas #stepp></canvas> -->
