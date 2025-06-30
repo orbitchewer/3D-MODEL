@@ -1,3 +1,37 @@
+# OVERVIEW
+
+The main objective of this project is to convert the Engineering Model STEP/STP CAD File Data  into 3D CAD Model in Three.Js and display in Web App.This basically involves analyzing the STEP File and converting it into  JSON format .This JSON File is then given  to the Frontend, to display the Model in Wireframe and Solid with Shading/Coloring.
+
+The frontend of the application uses Angular and Three.js.
+It features the following components:- 
+-> Project icon   
+
+-> Project name  
+
+-> A button to upload a JSON file for rendering an object
+
+-> Buttons to toggle between viewing the object as a wireframe or shaded.
+
+-> Canvas on which the object is formed consisting of axis.
+
+
+
+![initial](https://github.com/user-attachments/assets/fbe9368d-006f-4885-9a4b-351d2c2c1255)
+
+# 3D Model Wireframe Display.
+
+
+
+<img width="631" alt="Untitled 7" src="https://github.com/user-attachments/assets/dc274bc3-ad8f-41ff-bbcd-852afb535285" />
+
+
+
+# 3D Model Shaded Display.( Click Shade Button).
+
+<img width="627" alt="Untitled 9" src="https://github.com/user-attachments/assets/9d0c99c1-b787-4e17-ad79-446c4ef1e5ec" />
+
+
+
 # Projectt
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
